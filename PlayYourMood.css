@@ -71,3 +71,85 @@
 #pink:hover {
 	background-color:#FF00FF;
 }
+#login{
+	margin-top: 200px;
+	border-radius: 8px;
+	background-color: #F8F8FF;
+ 	color: #696969;
+  	padding: 10px 20px;
+  	cursor: pointer;
+  	transition: all 0.5s;
+  	opacity: 0.9;
+}
+#login: span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+};
+#login:  span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+  left:-40px;
+  transition: 0.5s;
+}
+#login:hover{
+	 padding-right: 45px;
+	 padding-left: 45px;
+}
+#login:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#signUp{
+	margin-top: 200px;
+	margin-left: 50px;
+	border-radius: 8px;
+	background-color: #F8F8FF;
+ 	color: #696969;
+  	padding: 10px 20px;
+  	cursor: pointer;
+  	transition: all 0.5s;
+  	opacity: 0.9;
+}
+#signUp: span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+};
+#signUp:  span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+  transition: 0.5s;
+}
+#signUp:hover{
+	padding-right: 45px;
+	padding-left: 45px;
+}
+#signUp:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.username {
+	margin-top: 50px;
+	position: center;
+}
+.confirm {
+	margin-top: 50px;
+	position: center;
+	border-radius: 8px;
+}
+.sign{
+	margin-top: 50px:
+}
+.confirsign{
+	margin-top: 50px;
+}
+
