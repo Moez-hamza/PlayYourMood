@@ -18,12 +18,33 @@
 .text{
 	margin:20px;
 	font-size: 15px;
+	
+	text-align: center;
+	font-family: Georgia, serif;
+	color: grey;
+
+}
+
+.title2{
+	position: center;
+	text-align:center;
+	margin:30px;
+	font-size:25px;
+	font-family: Georgia, serif;
+
+
+}
+.text2{
+	margin:20px;
+	font-size: 15px;
 	text-align-last: justify;
 	text-align: left;
 	font-family: Georgia, serif;
 	color: grey;
 
 }
+
+
 #blue {
   background-color: #A9A9A9;
   color: white;
@@ -161,7 +182,7 @@
 	background-size: cover;
 }
 .orangeMood{
-	background-image:url(https://lh3.googleusercontent.com/proxy/PttrPp0U3M5t8mx_4iE1nzUROEsH6xmP4DzfMB_Mp5fyN5iZaVwSKPVPv24na9tDDZ4mGbyjq-mJrFGio1KL5xd1S_xNGKym);
+	background-image:url(https://hdwallsource.com/img/2014/10/mood-wallpaper-38944-39838-hd-wallpapers.jpg);
 	min-height: 500px;
 	background-attachment: fixed;
 	background-position: center;
@@ -176,4 +197,101 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
+}
+.welcome{
+  text-align:center;
+  font-size:50px;
+  font-family: Georgia, serif;
+  color: ghostwhite;
+}
+
+.testImage {
+  max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  top: 300px;
+  
+}
+
+.testImage:hover {
+ opacity: 0.5;
+ transition: 0.5s;
+ cursor:pointer;
+}
+#play{
+	font-family: Georgia, serif;
+	font-size: 10px
+	color:grey;
+	left:50px;
+}
+#one{
+	  max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  margin-left: 50px;
+ 
+  left:100px;
+
+}
+
+#two {
+	  max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  margin-left: 50px;
+ 
+  left:400px;
+
+}
+#three {
+	max-width: 200px;
+  	max-height: 200px;
+  	position: absolute;
+  	margin-left: 50px;
+  	
+  	left:700px;
+
+}
+#four {
+		max-width: 200px;
+  	max-height: 200px;
+  	position: absolute;
+  	margin-left: 50px;
+
+  	left:1000px;
+}
+#five{
+	  max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  margin-left: 50px;
+
+  left:100px;
+
+}
+
+#six {
+	  max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  margin-left: 50px;
+  left:400px;
+
+}
+#seven {
+	max-width: 200px;
+  	max-height: 200px;
+  	position: absolute;
+  	margin-left: 50px;
+  
+  	left:700px;
+
+}
+#eight {
+		max-width: 200px;
+  	max-height: 200px;
+  	position: absolute;
+  	margin-left: 50px;
+  	
+  	left:1000px;
 }
