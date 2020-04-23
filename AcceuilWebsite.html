@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="PlayYourMood.css">
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<button id="blue">Blue mood</button>
+	<button id="orange">Orange Mood</button>
+	<button id="pink">Pink Mood</button>
+
+	
+	<title>
+
+	</title>
+</head>
+<body>
+	<div class="parallax">
+		<center><label class="sign" for="sign"><input type="text" placeholder="enter your name" name="Name" required></label>
+		<label class='sign'for='sign'><input type="text" placeholder="password" name="password"required></label><button class="confirmSign">confirm</button></center>
+
+
+		<center><button id="login">Login</button><button id="signUp">Sign Up</button></center>
+		<center><label class="username" for="username"><input type="text" placeholder="enter your name" name="Name" required></label>
+	<label class='username'for='password'><input type="text" placeholder="password" name="password required"></label>
+	<button class="confirm">confirm</button></center></div>
+
+	<div class="title">PlayYourMood
+	<div class="text">Play your mood is a website about music made by Adam and Moez 
+	click on your mood to listen to the appropriate music but don't to forget to login first if you're not already, you can sign up. 
+	</div></div>
+	<div class="parallax"></div>
+
+<script type="text/javascript">
+	$('.username').hide()
+	$('.confirm').hide()
+	$('.sign').hide()
+	$('.confirmSign').hide()
+	$('#login').on('click',function(){
+		$('.username').fadeIn()
+		$('.confirm').fadeIn()
+	})
+	$('.confirm').on('click',function(){
+		$('.username').fadeOut()
+		$('.confirm').fadeOut()
+	})
+	$('#signUp').on("click",function(){
+		$('.sign').fadeIn()
+		$('.confirmSign').fadeIn()
+	})
+	$('.confirmSign').on("click",function(){
+		$('.sign').fadeOut()
+		$('.confirmSign').fadeOut()
+	})
+
+</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+.parallax {
+	background-image:url(https://vorbedinpopor.files.wordpress.com/2012/03/1-7.jpg);
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.title{
+	position: center;
+	text-align:center;
+	margin:30px;
+	font-size:25px;
+	font-family: Georgia, serif;
+
+
+}
+.text{
+	margin:20px;
+	font-size: 15px;
+	text-align-last: justify;
+	text-align: left;
+	font-family: Georgia, serif;
+	color: grey;
+
+}
+#blue {
+  background-color: #A9A9A9;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33%;
+  opacity: 0.8;
+}
+
+#blue:hover{
+	background-color: #6495ED;
+}
+
+#orange {
+  background-color: #A9A9A9;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33%;
+   opacity: 0.8;
+}
+#orange:hover {
+	background-color:#FF8C00;
+}
+#pink {
+  background-color: #A9A9A9;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 34%;
+  opacity: 0.8;
+}
+#pink:hover {
+	background-color:#FF00FF;
+}
+#login{
+	margin-top: 200px;
+	border-radius: 8px;
+	background-color: #F8F8FF;
+ 	color: #696969;
+  	padding: 10px 20px;
+  	cursor: pointer;
+  	transition: all 0.5s;
+  	opacity: 0.9;
+}
+#login: span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+};
+#login:  span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+  left:-40px;
+  transition: 0.5s;
+}
+#login:hover{
+	 padding-right: 45px;
+	 padding-left: 45px;
+}
+#login:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#signUp{
+	margin-top: 200px;
+	margin-left: 50px;
+	border-radius: 8px;
+	background-color: #F8F8FF;
+ 	color: #696969;
+  	padding: 10px 20px;
+  	cursor: pointer;
+  	transition: all 0.5s;
+  	opacity: 0.9;
+}
+#signUp: span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+};
+#signUp:  span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+  transition: 0.5s;
+}
+#signUp:hover{
+	padding-right: 45px;
+	padding-left: 45px;
+}
+#signUp:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.username {
+	margin-top: 50px;
+	position: center;
+}
+.confirm {
+	margin-top: 50px;
+	position: center;
+	border-radius: 8px;
+}
+.sign{
+	margin-top: 50px:
+}
+.confirsign{
+	margin-top: 50px;
+}
+
