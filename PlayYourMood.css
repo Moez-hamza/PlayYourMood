@@ -1,0 +1,73 @@
+.parallax {
+	background-image:url(https://vorbedinpopor.files.wordpress.com/2012/03/1-7.jpg);
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.title{
+	position: center;
+	text-align:center;
+	margin:30px;
+	font-size:25px;
+	font-family: Georgia, serif;
+
+
+}
+.text{
+	margin:20px;
+	font-size: 15px;
+	text-align-last: justify;
+	text-align: left;
+	font-family: Georgia, serif;
+	color: grey;
+
+}
+#blue {
+  background-color: #A9A9A9;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33%;
+  opacity: 0.8;
+}
+
+#blue:hover{
+	background-color: #6495ED;
+}
+
+#orange {
+  background-color: #A9A9A9;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33%;
+   opacity: 0.8;
+}
+#orange:hover {
+	background-color:#FF8C00;
+}
+#pink {
+  background-color: #A9A9A9;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 34%;
+  opacity: 0.8;
+}
+#pink:hover {
+	background-color:#FF00FF;
+}
