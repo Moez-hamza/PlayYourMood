@@ -14,14 +14,14 @@
 	</title>
 </head>
 <body>
-	<div class="parallax">
-		<center><label class="sign" for="sign"><input type="text" placeholder="enter your name" name="Name" required></label>
-		<label class='sign'for='sign'><input type="text" placeholder="password" name="password"required></label><button class="confirmSign">confirm</button></center>
+	<div id="w" class="parallax">
+		<center><label class="sign" for="sign"><input class="input1" type="text" placeholder="enter your name" name="Name" required></label>
+		<label class='sign'for='sign'><input class="input2" type="password" placeholder="password" name="password"required></label><button class="confirmSign">confirm</button></center>
 
 
-		<center><button id="login">Login</button><button id="signUp">Sign Up</button></center>
-		<center><label class="username" for="username"><input type="text" placeholder="enter your name" name="Name" required></label>
-	<label class='username'for='password'><input type="text" placeholder="password" name="password required"></label>
+		<center><button class="button" id="login">Login</button><button class="button" id="signUp">Sign Up</button></center>
+		<center><label class="username" for="username"><input class="input3" type="text" placeholder="enter your name" name="Name" required></label>
+	<label class='username'for='password'><input class="input4" type="password" placeholder="password" name="password required"></label>
 	<button class="confirm">confirm</button></center></div>
 
 	<div class="title">PlayYourMood
@@ -29,14 +29,18 @@
 	click on your mood to listen to the appropriate music but don't to forget to login first if you're not already, you can sign up. 
 	</div></div>
 	<div class="parallax"></div>
-	<div class='blueMood'></div>
+	<div class='blueMood'><div id="testImage"> 
+		<figure>
+		<img class="image1" src="https://images.genius.com/02543f01dfa688d0e7de36632a1cd58b.1000x1000x1.jpg">
+		<span class="testsong">Play</span>
+	</figure></div></div>
 	<div class='blueMood'></div>
 	<div class='orangeMood'></div>
 	<div class='orangeMood'></div>
 	<div class="pinkMood"></div>
 	<div class="pinkMood"></div>
-
 <script type="text/javascript">
+	$(".image1").hide()
 	$('.blueMood').hide()
 	$('.orangeMood').hide()
 	$('.pinkMood').hide()
@@ -48,27 +52,28 @@
 		$('.username').fadeIn()
 		$('.confirm').fadeIn()
 	})
-	$('.confirm').on('click',function(){
-		$('.username').fadeOut()
-		$('.confirm').fadeOut()
-	})
 	$('#signUp').on("click",function(){
 		$('.sign').fadeIn()
 		$('.confirmSign').fadeIn()
 	})
-	$('.confirmSign').on("click",function(){
-		$('.sign').fadeOut()
-		$('.confirmSign').fadeOut()
-	})
 	 $('#blue').on('click',function(){
+	 	if(count === 0){
+	 	alert("Please Login!!")
+	 	return;   
+	 	}
 	 	$('.pinkMood').fadeOut()
 	 	$('.orangeMood').fadeOut()
 	 	$('.parallax').fadeOut()
 	 	$('.title').fadeOut()
 	 	$('.text').fadeOut()
 	 	$('.blueMood').fadeIn()
+	 	$(".image1").show()
 	 })
 	 $('#pink').on('click',function(){
+	 	if(count === 0){
+	 	alert("Please Login!!")
+	 	return;   
+	 	}
 	 	$('.orangeMood').fadeOut()
 	 	$('.blueMood').fadeOut()
 	 	$('.parallax').fadeOut()
@@ -77,6 +82,10 @@
 	 	$('.pinkMood').fadeIn()
 	})
 	 $('#orange').on('click',function(){
+	 	if(count === 0){
+	 	alert("Please Login!!")
+	 	return;   
+	 	}
 	 	$('.pinkMood').fadeOut()
 	 	$('.blueMood').fadeOut()
 	 	$('.parallax').fadeOut()
@@ -84,6 +93,40 @@
 	 	$('.text').fadeOut()
 	 	$('.orangeMood').fadeIn()
 	})
+	 var count = 0;
+	 var keys=Object.keys(localStorage);
+	 $(".confirmSign").on("click",function(){
+	 	localStorage.setItem($(".input1").val(),$(".input2").val())
+	 	$('.sign').fadeOut()
+		$('.confirmSign').fadeOut()
+	 })
+	 $(".confirm").on("click",function(){
+	 	for(var i = 0 ; i < keys.length ; i++){ 
+	 	if($(".input3").val() === keys[i] && $(".input4").val() === localStorage.getItem(keys[i])){
+	 		$(".button").hide()
+	 		$("#w").append("<center><div class='welcome'>Welcome " + $('.input3').val() +"</div></center>")
+	 		$('.username').fadeOut()
+			$('.confirm').fadeOut()
+			count++;
+	 		return;
+	 	}
+	 	}
+	 		alert("wrong username or password !!")
+	 })
+var obj = {};
+var RememberThis = new Audio("Remember This .mp3");
+obj["Remember This - NF"] = RememberThis;
+var songkeys = Object.keys(obj)
+var count1 = 0;
+$(".testsong").on("click",function(){
+	if(count1===1){
+		obj[songkeys[0]].pause();
+		count1=0
+		return;
+	}
+	obj[songkeys[0]].play();
+	count1++;
+})
 
 
 </script>

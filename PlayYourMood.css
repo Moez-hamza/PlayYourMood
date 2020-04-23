@@ -177,3 +177,28 @@
 	background-size: cover;
 
 }
+.welcome{
+  text-align:center;
+  font-size:50px;
+  font-family: Georgia, serif;
+  color: ghostwhite;
+}
+.image1{
+  background-repeat: no-repeat;
+  max-width: 20%;
+}
+#testImage span{
+  position: absolute;
+  top: 290px;
+  left: 150px;
+  size: 15px
+}
+#testImage span:after{
+  opacity: 0.5;
+}
+#testImage span:hover{
+  color:cyan;
+}
+#testImage span{
+  cursor:pointer;
+}
