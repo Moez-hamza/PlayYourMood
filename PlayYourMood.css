@@ -161,7 +161,7 @@
 	background-size: cover;
 }
 .orangeMood{
-	background-image:url(https://lh3.googleusercontent.com/proxy/PttrPp0U3M5t8mx_4iE1nzUROEsH6xmP4DzfMB_Mp5fyN5iZaVwSKPVPv24na9tDDZ4mGbyjq-mJrFGio1KL5xd1S_xNGKym);
+	background-image:url(https://hdwallsource.com/img/2014/10/mood-wallpaper-38944-39838-hd-wallpapers.jpg);
 	min-height: 500px;
 	background-attachment: fixed;
 	background-position: center;
@@ -183,22 +183,94 @@
   font-family: Georgia, serif;
   color: ghostwhite;
 }
-.image1{
-  background-repeat: no-repeat;
-  max-width: 20%;
-}
-#testImage span{
+
+.testImage {
+  max-width: 200px;
+  max-height: 200px;
   position: absolute;
-  top: 290px;
-  left: 150px;
-  size: 15px
+  top: 300px;
+  
 }
-#testImage span:after{
-  opacity: 0.5;
+
+.testImage:hover {
+ opacity: 0.5;
+ transition: 0.5s;
+ cursor:pointer;
 }
-#testImage span:hover{
-  color:cyan;
+#play{
+	font-family: Georgia, serif;
+	font-size: 10px
+	color:grey;
+	left:50px;
 }
-#testImage span{
-  cursor:pointer;
+#one{
+	  max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  margin-left: 50px;
+ 
+  left:100px;
+
+}
+
+#two {
+	  max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  margin-left: 50px;
+ 
+  left:400px;
+
+}
+#three {
+	max-width: 200px;
+  	max-height: 200px;
+  	position: absolute;
+  	margin-left: 50px;
+  	
+  	left:700px;
+
+}
+#four {
+		max-width: 200px;
+  	max-height: 200px;
+  	position: absolute;
+  	margin-left: 50px;
+
+  	left:1000px;
+}
+#five{
+	  max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  margin-left: 50px;
+
+  left:100px;
+
+}
+
+#six {
+	  max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  margin-left: 50px;
+  left:400px;
+
+}
+#seven {
+	max-width: 200px;
+  	max-height: 200px;
+  	position: absolute;
+  	margin-left: 50px;
+  
+  	left:700px;
+
+}
+#eight {
+		max-width: 200px;
+  	max-height: 200px;
+  	position: absolute;
+  	margin-left: 50px;
+  	
+  	left:1000px;
 }
