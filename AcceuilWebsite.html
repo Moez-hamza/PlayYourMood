@@ -45,12 +45,18 @@
 		<img class="testImage" id="six" src="https://static.fnac-static.com/multimedia/Images/FR/NR/f0/ff/81/8519664/1540-1/tsp20170116142618/Elwan.jpg">
 		<img class="testImage" id="seven" src="https://s1.dmcdn.net/v/EeTYO1N0y0OnJLAXG/x480">
 		<img class="testImage" id="eight" src="https://m.media-amazon.com/images/I/71yUYGZDejL._SS500_.jpg">
+		
+	</div>
+	<div class="title2">Orange Mood
+	<div class="text2"> Orange is the color for the warm, the spring and the summer if you're feeling cold try to warm your spirit  </div>
 	<!-- <span id="Play">Olafur Arnalds - Near Light</span> -->
 	</div></div>
 	<div class='orangeMood'></div>
 	<div class="pinkMood"></div>
 	<div class="pinkMood"></div>
 <script type="text/javascript">
+	$('.title2').hide()
+	$('.text2').hide()
 	$(".image1").hide()
 	$('.blueMood').hide()
 	$('.orangeMood').hide()
@@ -97,6 +103,8 @@
 	 	alert("Please Login!!")
 	 	return;   
 	 	}
+	 	$('.text2').fadeIn()
+	 	$('.title2').fadeIn()
 	 	$('.pinkMood').fadeOut()
 	 	$('.blueMood').fadeOut()
 	 	$('.parallax').fadeOut()

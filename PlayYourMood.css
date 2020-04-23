@@ -18,12 +18,33 @@
 .text{
 	margin:20px;
 	font-size: 15px;
+	
+	text-align: center;
+	font-family: Georgia, serif;
+	color: grey;
+
+}
+
+.title2{
+	position: center;
+	text-align:center;
+	margin:30px;
+	font-size:25px;
+	font-family: Georgia, serif;
+
+
+}
+.text2{
+	margin:20px;
+	font-size: 15px;
 	text-align-last: justify;
 	text-align: left;
 	font-family: Georgia, serif;
 	color: grey;
 
 }
+
+
 #blue {
   background-color: #A9A9A9;
   color: white;
