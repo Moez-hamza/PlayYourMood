@@ -29,8 +29,15 @@
 	click on your mood to listen to the appropriate music but don't to forget to login first if you're not already, you can sign up. 
 	</div></div>
 	<div class="parallax"></div>
+	<div class='blueMood'></div>
+	<div class='blueMood'></div>
+	<div class='orangeMood'></div>
+	<div class='orangeMood'></div>
+	<div class="pinkMood"></div>
+	<div class="pinkMood"></div>
 
 <script type="text/javascript">
+	$('.blueMood').hide()
 	$('.username').hide()
 	$('.confirm').hide()
 	$('.sign').hide()
@@ -51,6 +58,31 @@
 		$('.sign').fadeOut()
 		$('.confirmSign').fadeOut()
 	})
+	 $('#blue').on('click',function(){
+	 	$('.pinkMood').fadeOut()
+	 	$('.orangeMood').fadeOut()
+	 	$('.parallax').fadeOut()
+	 	$('.title').fadeOut()
+	 	$('.text').fadeOut()
+	 	$('.blueMood').fadeIn()
+	 })
+	 $('#pink').on('click',function(){
+	 	$('.orangeMood').fadeOut()
+	 	$('.blueMood').fadeOut()
+	 	$('.parallax').fadeOut()
+	 	$('.title').fadeOut()
+	 	$('.text').fadeOut()
+	 	$('.pinkMood').fadeIn()
+	})
+	 $('#orange').on('click',function(){
+	 	$('.pinkMood').fadeOut()
+	 	$('.blueMood').fadeOut()
+	 	$('.parallax').fadeOut()
+	 	$('.title').fadeOut()
+	 	$('.text').fadeOut()
+	 	$('.orangeMood').fadeIn()
+	})
+
 
 </script>
 </body>
