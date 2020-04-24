@@ -25,7 +25,8 @@
 
 }
 
-.title2{
+.OrangeTitle{
+
 	position: center;
 	text-align:center;
 	margin:30px;
@@ -34,16 +35,47 @@
 
 
 }
-.text2{
+.OrangeText{
 	margin:20px;
 	font-size: 15px;
-	text-align-last: justify;
-	text-align: left;
 	font-family: Georgia, serif;
 	color: grey;
 
 }
 
+.BlueTitle{
+
+  position: center;
+  text-align:center;
+  margin:30px;
+  font-size:25px;
+  font-family: Georgia, serif;
+
+
+}
+.BlueText{
+  margin:20px;
+  font-size: 15px;
+  font-family: Georgia, serif;
+  color: grey;
+
+}
+
+.PinkTitle{
+  position: center;
+  text-align:center;
+  margin:30px;
+  font-size:25px;
+  font-family: Georgia, serif;
+
+
+}
+.PinkText{
+  margin:20px;
+  font-size: 15px;
+  font-family: Georgia, serif;
+  color: grey;
+}
 
 #blue {
   background-color: #A9A9A9;
@@ -199,17 +231,19 @@
 
 }
 .welcome{
+  min-height: 300px;
+  padding-top:200px;
   text-align:center;
   font-size:50px;
   font-family: Georgia, serif;
-  color: ghostwhite;
+  color: #778899;
 }
 
 .testImage {
   max-width: 200px;
   max-height: 200px;
   position: absolute;
-  top: 300px;
+  top: 180px;
   
 }
 
@@ -225,7 +259,7 @@
 	left:50px;
 }
 #one{
-	  max-width: 200px;
+	 max-width: 200px;
   max-height: 200px;
   position: absolute;
   margin-left: 50px;
@@ -294,4 +328,39 @@
   	margin-left: 50px;
   	
   	left:1000px;
+}
+
+#nine{
+    max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  margin-left: 50px;
+
+  left:100px;
+
+}
+#ten {
+    max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  margin-left: 50px;
+  left:400px;
+
+}
+#eleven {
+  max-width: 200px;
+    max-height: 200px;
+    position: absolute;
+    margin-left: 50px;
+  
+    left:700px;
+
+}
+#twelve {
+    max-width: 200px;
+    max-height: 200px;
+    position: absolute;
+    margin-left: 50px;
+    
+    left:1000px;
 }

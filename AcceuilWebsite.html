@@ -10,7 +10,7 @@
 
 	
 	<title>
-
+		PlaYourMood
 	</title>
 </head>
 <body>
@@ -37,9 +37,10 @@
 		<img class="testImage" id="four" src="https://i1.sndcdn.com/artworks-000407761464-sd7bzi-t500x500.jpg">
 	<!-- <span id="Play">Olafur Arnalds - Near Light</span> -->
 	</div></div>
-
+	<div class="BlueTitle">Blue Mood
+	<div class="BlueText"> Blue is the color for the sorrow and cold feelings, if you feel your heart broken and you need some emotional music try this atmosphere  </div> </div>
 	<div class='blueMood'></div>
-	<div class='orangeMood'>
+<div class='orangeMood'>
 	<div> 
 		<img class="testImage" id="five" src="https://img.discogs.com/EXCueciQ7qUnvlknsFX3Gy-kuvk=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9674803-1484578625-4918.jpeg.jpg">
 		<img class="testImage" id="six" src="https://static.fnac-static.com/multimedia/Images/FR/NR/f0/ff/81/8519664/1540-1/tsp20170116142618/Elwan.jpg">
@@ -47,16 +48,32 @@
 		<img class="testImage" id="eight" src="https://m.media-amazon.com/images/I/71yUYGZDejL._SS500_.jpg">
 		
 	</div>
-	<div class="title2">Orange Mood
-	<div class="text2"> Orange is the color for the warm, the spring and the summer if you're feeling cold try to warm your spirit  </div>
+	
 	<!-- <span id="Play">Olafur Arnalds - Near Light</span> -->
-	</div></div>
+	</div>
+	<div class="OrangeTitle">Orange Mood
+	<div class="OrangeText"> Orange is the color for the warm, the spring and the summer if you're feeling cold try to warm your spirit  </div>
+</div>
 	<div class='orangeMood'></div>
-	<div class="pinkMood"></div>
+	<div class="pinkMood">
+	<div> 
+		<img class="testImage" id="nine" src="https://img.discogs.com/djAEei1KFBSQk9HY80Kr8ccmyCU=/fit-in/599x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1497020-1455080288-4093.jpeg.jpg">
+		<img class="testImage" id="ten" src="https://d2tml28x3t0b85.cloudfront.net/tracks/artworks/000/692/080/original/56fe9a.jpeg?1514247373">
+		<img class="testImage" id="eleven" src="https://s.mxmcdn.net/images-storage/albums4/6/9/0/4/0/3/38304096_800_800.jpg">
+		<img class="testImage" id="twelve" src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Dance_Monkey_by_Tones_and_I.jpg/220px-Dance_Monkey_by_Tones_and_I.jpg">
+		
+	</div></div>
+	<div class="PinkTitle">Pink Mood
+	<div class="PinkText"> Pink is the color for happiness,so throw everything away and just dance  </div>
+</div>
 	<div class="pinkMood"></div>
 <script type="text/javascript">
-	$('.title2').hide()
-	$('.text2').hide()
+	$('.PinkTitle').hide()
+	$('.PinkText').hide()
+	$('.OrangeTitle').hide()
+	$('.OrangeText').hide()
+	$('.BlueTitle').hide()
+	$('.BlueText').hide()
 	$(".image1").hide()
 	$('.blueMood').hide()
 	$('.orangeMood').hide()
@@ -78,6 +95,12 @@
 	 	alert("Please Login!!")
 	 	return;   
 	 	}
+	 	$('.PinkTitle').hide()
+		$('.PinkText').hide()
+	 	$('.BlueTitle').fadeIn()
+		$('.BlueText').fadeIn()
+	 	$('.OrangeTitle').hide()
+		$('.OrangeText').hide()
 	 	$('.pinkMood').fadeOut()
 	 	$('.orangeMood').fadeOut()
 	 	$('.parallax').fadeOut()
@@ -91,6 +114,12 @@
 	 	alert("Please Login!!")
 	 	return;   
 	 	}
+	 	$('.PinkTitle').fadeIn()
+		$('.PinkText').fadeIn()
+	 	$('.BlueTitle').hide()
+		$('.BlueText').hide()
+	 	$('.OrangeTitle').hide()
+		$('.OrangeText').hide()
 	 	$('.orangeMood').fadeOut()
 	 	$('.blueMood').fadeOut()
 	 	$('.parallax').fadeOut()
@@ -103,8 +132,12 @@
 	 	alert("Please Login!!")
 	 	return;   
 	 	}
-	 	$('.text2').fadeIn()
-	 	$('.title2').fadeIn()
+	 	$('.PinkTitle').hide()
+		$('.PinkText').hide()
+	 	$('.BlueTitle').hide()
+		$('.BlueText').hide()
+	 	$('.OrangeTitle').fadeIn()
+		$('.OrangeText').fadeIn()
 	 	$('.pinkMood').fadeOut()
 	 	$('.blueMood').fadeOut()
 	 	$('.parallax').fadeOut()
