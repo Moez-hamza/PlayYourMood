@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="PlayYourMood.css">
 	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-	<button id="blue">Blue mood</button>
+	<button id="blue">Blue Mood</button>
 	<button id="orange">Orange Mood</button>
 	<button id="pink">Pink Mood</button>
 
@@ -15,20 +15,25 @@
 </head>
 <body>
 	<div id="w" class="parallax">
-		<center><label class="sign" for="sign"><input class="input1" type="text" placeholder="enter your name" name="Name" required></label>
-		<label class='sign'for='sign'><input class="input2" type="password" placeholder="password" name="password"required></label><button class="confirmSign">confirm</button></center>
+		
 
 
 		<center><button class="button" id="login">Login</button><button class="button" id="signUp">Sign Up</button></center>
 		<center><label class="username" for="username"><input class="input3" type="text" placeholder="enter your name" name="Name" required></label>
 	<label class='username'for='password'><input class="input4" type="password" placeholder="password" name="password required"></label>
-	<button class="confirm">confirm</button></center></div>
+	<button class="confirm">Log</button></center>
+
+	<center><label class="sign" for="sign"><input class="input1" type="text" placeholder="enter your name" name="Name" required></label>
+		<label class='sign'for='sign'><input class="input2" type="password" placeholder="password" name="password"required></label><button class="confirmSign">Sign</button></center>
+
+</div>
+
 
 	<div class="title">PlayYourMood
 	<div class="text">Play your mood is a website about music made by Adam and Moez 
 	click on your mood to listen to the appropriate music but don't to forget to login first if you're not already, you can sign up. 
 	</div></div>
-	<div class="parallax"></div>
+	<div class="parallax"><button class="LogOut">LogOut</button></div>
 	<div class='blueMood'>
 	<div> 
 
@@ -39,6 +44,7 @@
 		<img class="testImage" id="three" src="https://diveintosun.files.wordpress.com/2013/09/nils-frahm-spaces_artwork.jpg?w=350&h=350">
 		<img class="testImage" id="four" src="https://i1.sndcdn.com/artworks-000407761464-sd7bzi-t500x500.jpg">
 
+
 	</div>
 <div class="SongTitle1">Olafur Arnalds - Near Light</div>
 <div class="SongTitle2">Cinematic Orchestra <br> To Build a Home</div>
@@ -46,9 +52,11 @@
 <div class="SongTitle4">Dhafer Youssef <br> Soupir Eternel</div>
 </div>
 
+	</div></div>
+
 	<div class="BlueTitle">Blue Mood
 	<div class="BlueText"> Blue is the color for the sorrow and cold feelings, if you feel your heart broken and you need some emotional music try this atmosphere  </div> </div>
-	<div class='blueMood'></div>
+	<div class='blueMood'><button class="GoBack"> << Go Back</button><button class="LogOut">LogOut</button></div>
 <div class='orangeMood'>
 	<div> 
 		<img class="testImage" id="five" src="https://img.discogs.com/EXCueciQ7qUnvlknsFX3Gy-kuvk=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9674803-1484578625-4918.jpeg.jpg">
@@ -58,15 +66,18 @@
 			
 	</div>
 	
+
 	<div class="SongTitle1" id="Fatoumata">Fatoumata - Nterini</div>
 <div class="SongTitle2" >Tinariwen<br>sastanàqqàm</div>
 <div class="SongTitle3" id="Petit">Petit biscuit<br>Sunset Lover</div>
 <div class="SongTitle4" id="Fakear">Fakear<br>La Lune Rousse</div>
+
+
 	</div>
 	<div class="OrangeTitle">Orange Mood
 	<div class="OrangeText"> Orange is the color for the warm, the spring and the summer if you're feeling cold try to warm your spirit  </div>
 </div>
-	<div class='orangeMood'></div>
+	<div class='orangeMood'><button class="GoBack"> << Go Back</button><button class="LogOut">LogOut</button></div></div>
 	<div class="pinkMood">
 	<div> 
 		<img class="testImage" id="nine" src="https://img.discogs.com/djAEei1KFBSQk9HY80Kr8ccmyCU=/fit-in/599x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1497020-1455080288-4093.jpeg.jpg">
@@ -74,21 +85,28 @@
 		<img class="testImage" id="eleven" src="https://s.mxmcdn.net/images-storage/albums4/6/9/0/4/0/3/38304096_800_800.jpg">
 		<img class="testImage" id="twelve" src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Dance_Monkey_by_Tones_and_I.jpg/220px-Dance_Monkey_by_Tones_and_I.jpg">
 		
+
 	</div>
 	<div class="SongTitle1" id="Fatoumata">Guns & Roses<br>Sweet Child O'Mine</div>
 <div class="SongTitle2" >Post Malone<br>Rockstar</div>
 <div class="SongTitle3" id="Petit">Masego - Tadow</div>
 <div class="SongTitle4" id="Fakear">Tones & I<br>-<br>Dance Monkey</div>
 </div>
+
+	</div></div>
+
 	<div class="PinkTitle">Pink Mood
 	<div class="PinkText"> Pink is the color for happiness,so throw everything away and just dance  </div>
 </div>
-	<div class="pinkMood"></div>
+	<div class="pinkMood"><button class="GoBack"> << Go Back</button><button class="LogOut">LogOut</button></div></div>
+
+
 
 <script type="text/javascript">
 	$('.PinkTitle').hide()
 	$('.PinkText').hide()
 	$('.OrangeTitle').hide()
+	$('.LogOut').hide()
 	$('.OrangeText').hide()
 	$('.BlueTitle').hide()
 	$('.BlueText').hide()
@@ -166,9 +184,14 @@
 	 var count = 0;
 	 var keys=Object.keys(localStorage);
 	 $(".confirmSign").on("click",function(){
+	 	if ($(".input1").val().length===0||$(".input2").val().length===0){
+	 		alert("You need to type your name and your password !!")
+	 		return
+	 	}
 	 	localStorage.setItem($(".input1").val(),$(".input2").val())
 	 	$('.sign').fadeOut()
 		$('.confirmSign').fadeOut()
+
 	 })
 	 $(".confirm").on("click",function(){
 	 	for(var i = 0 ; i < keys.length ; i++){ 
@@ -177,6 +200,7 @@
 	 		$("#w").append("<center><div class='welcome'>Welcome " + $('.input3').val() +"</div></center>")
 	 		$('.username').fadeOut()
 			$('.confirm').fadeOut()
+			$('.LogOut').fadeIn()
 			count++;
 	 		return;
 	 	}
@@ -184,19 +208,206 @@
 	 		alert("wrong username or password !!")
 	 })
 var obj = {};
-var RememberThis = new Audio("Remember This .mp3");
-obj["Remember This - NF"] = RememberThis;
-var songkeys = Object.keys(obj)
-var count1 = 0;
-$(".testsong").on("click",function(){
+var SoupirEternel = new Audio("music/soupir-eternel.mp3");
+var laLuneRousse = new Audio("music/fakear-la-lune-rousse-feat-deva-premal-official-music-video.mp3")
+var nteriniAColorsShow = new Audio("music/fatoumata-diawara-nterini-a-colors-show.mp3")
+var gunsNRoses = new Audio("music/guns-n-roses-sweet-child-o-mine-official-music-video.mp3")
+var nilsFrahmSays = new Audio("music/nils-frahm-says.mp3")
+var NearLight = new Audio("music/Olafur Arnalds - Near Light (Original Mix) [TraxCrate.com].mp3")
+var petitBiscuitSunset = new Audio("music/petit-biscuit-sunset-lover.mp3")
+var toBuildAHome = new Audio("music/the-cinematic-orchestra-to-build-a-home.mp3")
+var tinariwenIoiSastanaqqam = new Audio("music/tinariwen-ioi-sastanaqqam.mp3")
+var DanceMonkey = new Audio("music/Tones and I - Dance Monkey (Lyrics).mp3")
+var Tadow = new Audio("music/Masego + FKJ - Tadow.mp3")
+var Rockstar = new Audio("music/Post Malone - rockstar ft. 21 Savage.mp3")
+obj["Post Malone - rockstar ft. 21 Savage"]= Rockstar;
+obj["Masego + FKJ - Tadow"]=Tadow;
+obj["Tones and I - Dance Monkey"]=DanceMonkey;
+obj["tinariwen-ioi-sastanaqqam"]=tinariwenIoiSastanaqqam;
+obj["the-cinematic-orchestra-to-build-a-home"]=toBuildAHome;
+obj["petit-biscuit-sunset-lover"]=petitBiscuitSunset;
+obj["Olafur Arnalds - Near Light"]=NearLight;
+obj["nils-frahm-says"]=nilsFrahmSays;
+obj["guns-n-roses-sweet-child-o-mine-official-music-video"]=gunsNRoses;
+obj["fatoumata-diawara-nterini-a-colors-show"]= nteriniAColorsShow;
+obj["fakear-la-lune-rousse-feat-deva-premal-official-music-video"]=laLuneRousse;
+obj["DhaferYoussef-Soupir-Eternel"] = SoupirEternel;
+
+var songskeys = Object.keys(obj)
+var count1=0;
+var count2=0;
+var count3=0;
+var count4=0;
+var count5=0;
+var count6=0;
+var count7=0;
+var count8=0;
+var count9=0;
+var count10=0;
+var count11=0;
+var count12=0;
+
+$("#one").on("click",function(){
 	if(count1===1){
-		obj[songkeys[0]].pause();
+		obj["Olafur Arnalds - Near Light"].pause();
 		count1=0
 		return;
 	}
-	obj[songkeys[0]].play();
+	obj["Olafur Arnalds - Near Light"].play();
 	count1++;
 })
+$("#two").on("click",function(){
+	if(count2===1){
+		obj["the-cinematic-orchestra-to-build-a-home"].pause();
+		count2=0
+		return;
+	}
+	obj["the-cinematic-orchestra-to-build-a-home"].play();
+	count2++;
+})
+
+$("#three").on("click",function(){
+	if(count3===1){
+		obj["nils-frahm-says"].pause();
+		count3=0
+		return;
+	}
+	obj["nils-frahm-says"].play();
+	count3++;
+})
+
+$("#four").on("click",function(){
+	if(count4===1){
+		obj["DhaferYoussef-Soupir-Eternel"].pause();
+		count4=0
+		return;
+	}
+	obj["DhaferYoussef-Soupir-Eternel"].play();
+	count4++;
+})
+$("#five").on("click",function(){
+	if(count5===1){
+		obj["fatoumata-diawara-nterini-a-colors-show"].pause();
+		count5=0
+		return;
+	}
+	obj["fatoumata-diawara-nterini-a-colors-show"].play();
+	count5++;
+})
+$("#six").on("click",function(){
+	if(count6===1){
+		obj["tinariwen-ioi-sastanaqqam"].pause();
+		count6=0
+		return;
+	}
+	obj["tinariwen-ioi-sastanaqqam"].play();
+	count6++;
+})
+
+$("#seven").on("click",function(){
+	if(count7===1){
+		obj["petit-biscuit-sunset-lover"].pause();
+		count7=0
+		return;
+	}
+	obj["petit-biscuit-sunset-lover"].play();
+	count7++;
+})
+$("#eight").on("click",function(){
+	if(count8===1){
+		obj["fakear-la-lune-rousse-feat-deva-premal-official-music-video"].pause();
+		count8=0
+		return;
+	}
+	obj["fakear-la-lune-rousse-feat-deva-premal-official-music-video"].play();
+	count8++;
+})
+
+$("#nine").on("click",function(){
+	if(count9===1){
+		obj["guns-n-roses-sweet-child-o-mine-official-music-video"].pause();
+		count9=0
+		return;
+	}
+	obj["guns-n-roses-sweet-child-o-mine-official-music-video"].play();
+	count9++;
+})
+
+$("#ten").on("click",function(){
+	if(count10===1){
+		obj["Post Malone - rockstar ft. 21 Savage"].pause();
+		count10=0
+		return;
+	}
+	obj["Post Malone - rockstar ft. 21 Savage"].play();
+	count10++;
+})
+
+$("#eleven").on("click",function(){
+	if(count11===1){
+		obj["Masego + FKJ - Tadow"].pause();
+		count11=0
+		return;
+	}
+	obj["Masego + FKJ - Tadow"].play();
+	count11++;
+})
+
+$("#twelve").on("click",function(){
+	if(count12===1){
+		obj["Tones and I - Dance Monkey"].pause();
+		count12=0
+		return;
+	}
+	obj["Tones and I - Dance Monkey"].play();
+	count12++;
+})
+$('.GoBack').on("click",function(){
+	$('.PinkTitle').hide()
+	$('.PinkText').hide()
+	$('.OrangeTitle').hide()
+	$('.OrangeText').hide()
+	$('.BlueTitle').hide()
+	$('.BlueText').hide()
+	$(".image1").hide()
+	$('.blueMood').hide()
+	$('.orangeMood').hide()
+	$('.pinkMood').hide()
+	$('.username').hide()
+	$('.confirm').hide()
+	$('.sign').hide()
+	$('.confirmSign').hide()
+	$('.parallax').fadeIn()
+	$('.title').fadeIn()
+	$('.text').fadeIn()
+
+})
+$('.LogOut').on("click",function(){
+	$('.PinkTitle').hide()
+	$('.PinkText').hide()
+	$('.OrangeTitle').hide()
+	$('.OrangeText').hide()
+	$('.BlueTitle').hide()
+	$('.BlueText').hide()
+	$(".image1").hide()
+	$('.blueMood').hide()
+	$('.orangeMood').hide()
+	$('.pinkMood').hide()
+	$('.username').hide()
+	$('.confirm').hide()
+	$('.sign').hide()
+	$('.confirmSign').hide()
+	$('.parallax').fadeIn()
+	$('.title').fadeIn()
+	$('.text').fadeIn()
+	$('.welcome').fadeOut()
+	$('#login').fadeIn()
+	$('#signUp').fadeIn()
+	$('.LogOut').fadeOut()
+	count=0
+})
+
+
 
 
 </script>

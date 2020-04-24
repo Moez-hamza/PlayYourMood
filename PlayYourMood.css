@@ -78,6 +78,7 @@
 }
 
 #blue {
+  font-family: Georgia, serif;
   background-color: #A9A9A9;
   color: white;
   float: left;
@@ -95,6 +96,7 @@
 }
 
 #orange {
+  font-family: Georgia, serif;
   background-color: #A9A9A9;
   color: white;
   float: left;
@@ -110,6 +112,7 @@
 	background-color:#FF8C00;
 }
 #pink {
+  font-family: Georgia, serif;
   background-color: #A9A9A9;
   color: white;
   float: left;
@@ -200,9 +203,9 @@
 	border-radius: 8px;
 }
 .sign{
-	margin-top: 50px:""
+	margin-top: 50px:
 }
-.confirsign{
+.confirmSign{
 	margin-top: 50px;
 }
 .blueMood {
@@ -408,4 +411,67 @@
     margin-left: 50px;
     
     left:1000px;
+}
+
+.GoBack{
+  margin-top: 120px;
+  margin-left: 180px;
+  border-radius: 8px;
+  background-color: #F8F8FF;
+  color: #696969;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    opacity: 0.9;
+}
+.GoBack: span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+};
+.GoBack:  span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+  left:-40px;
+  transition: 0.5s;
+}
+
+.GoBack:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.LogOut{
+  margin-top: 120px;
+  margin-left: 800px;
+  border-radius: 8px;
+  background-color: #F8F8FF;
+  color: #696969;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    opacity: 0.9;
+}
+.LogOut: span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+};
+.LogOut:  span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+  left:-40px;
+  transition: 0.5s;
+}
+
+.LogOut:hover span:after {
+  opacity: 1;
+  right: 0;
 }
