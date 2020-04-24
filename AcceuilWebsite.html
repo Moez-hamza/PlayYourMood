@@ -10,7 +10,7 @@
 
 	
 	<title>
-
+		PlaYourMood
 	</title>
 </head>
 <body>
@@ -37,9 +37,10 @@
 		<img class="testImage" id="four" src="https://i1.sndcdn.com/artworks-000407761464-sd7bzi-t500x500.jpg">
 	<!-- <span id="Play">Olafur Arnalds - Near Light</span> -->
 	</div></div>
-
+	<div class="BlueTitle">Blue Mood
+	<div class="BlueText"> Blue is the color for the sorrow and cold feelings, if you feel your heart broken and you need some emotional music try this atmosphere  </div> </div>
 	<div class='blueMood'></div>
-	<div class='orangeMood'>
+<div class='orangeMood'>
 	<div> 
 		<img class="testImage" id="five" src="https://img.discogs.com/EXCueciQ7qUnvlknsFX3Gy-kuvk=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9674803-1484578625-4918.jpeg.jpg">
 		<img class="testImage" id="six" src="https://static.fnac-static.com/multimedia/Images/FR/NR/f0/ff/81/8519664/1540-1/tsp20170116142618/Elwan.jpg">
@@ -47,16 +48,32 @@
 		<img class="testImage" id="eight" src="https://m.media-amazon.com/images/I/71yUYGZDejL._SS500_.jpg">
 		
 	</div>
-	<div class="title2">Orange Mood
-	<div class="text2"> Orange is the color for the warm, the spring and the summer if you're feeling cold try to warm your spirit  </div>
+	
 	<!-- <span id="Play">Olafur Arnalds - Near Light</span> -->
-	</div></div>
+	</div>
+	<div class="OrangeTitle">Orange Mood
+	<div class="OrangeText"> Orange is the color for the warm, the spring and the summer if you're feeling cold try to warm your spirit  </div>
+</div>
 	<div class='orangeMood'></div>
-	<div class="pinkMood"></div>
+	<div class="pinkMood">
+	<div> 
+		<img class="testImage" id="nine" src="https://img.discogs.com/djAEei1KFBSQk9HY80Kr8ccmyCU=/fit-in/599x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1497020-1455080288-4093.jpeg.jpg">
+		<img class="testImage" id="ten" src="https://d2tml28x3t0b85.cloudfront.net/tracks/artworks/000/692/080/original/56fe9a.jpeg?1514247373">
+		<img class="testImage" id="eleven" src="https://s.mxmcdn.net/images-storage/albums4/6/9/0/4/0/3/38304096_800_800.jpg">
+		<img class="testImage" id="twelve" src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Dance_Monkey_by_Tones_and_I.jpg/220px-Dance_Monkey_by_Tones_and_I.jpg">
+		
+	</div></div>
+	<div class="PinkTitle">Pink Mood
+	<div class="PinkText"> Pink is the color for happiness,so throw everything away and just dance  </div>
+</div>
 	<div class="pinkMood"></div>
 <script type="text/javascript">
-	$('.title2').hide()
-	$('.text2').hide()
+	$('.PinkTitle').hide()
+	$('.PinkText').hide()
+	$('.OrangeTitle').hide()
+	$('.OrangeText').hide()
+	$('.BlueTitle').hide()
+	$('.BlueText').hide()
 	$(".image1").hide()
 	$('.blueMood').hide()
 	$('.orangeMood').hide()
@@ -78,6 +95,12 @@
 	 	alert("Please Login!!")
 	 	return;   
 	 	}
+	 	$('.PinkTitle').hide()
+		$('.PinkText').hide()
+	 	$('.BlueTitle').fadeIn()
+		$('.BlueText').fadeIn()
+	 	$('.OrangeTitle').hide()
+		$('.OrangeText').hide()
 	 	$('.pinkMood').fadeOut()
 	 	$('.orangeMood').fadeOut()
 	 	$('.parallax').fadeOut()
@@ -91,6 +114,12 @@
 	 	alert("Please Login!!")
 	 	return;   
 	 	}
+	 	$('.PinkTitle').fadeIn()
+		$('.PinkText').fadeIn()
+	 	$('.BlueTitle').hide()
+		$('.BlueText').hide()
+	 	$('.OrangeTitle').hide()
+		$('.OrangeText').hide()
 	 	$('.orangeMood').fadeOut()
 	 	$('.blueMood').fadeOut()
 	 	$('.parallax').fadeOut()
@@ -103,8 +132,12 @@
 	 	alert("Please Login!!")
 	 	return;   
 	 	}
-	 	$('.text2').fadeIn()
-	 	$('.title2').fadeIn()
+	 	$('.PinkTitle').hide()
+		$('.PinkText').hide()
+	 	$('.BlueTitle').hide()
+		$('.BlueText').hide()
+	 	$('.OrangeTitle').fadeIn()
+		$('.OrangeText').fadeIn()
 	 	$('.pinkMood').fadeOut()
 	 	$('.blueMood').fadeOut()
 	 	$('.parallax').fadeOut()
@@ -133,18 +166,159 @@
 	 		alert("wrong username or password !!")
 	 })
 var obj = {};
-var RememberThis = new Audio("Remember This .mp3");
-obj["Remember This - NF"] = RememberThis;
-var songkeys = Object.keys(obj)
-var count1 = 0;
-$(".testsong").on("click",function(){
+var SoupirEternel = new Audio("music/soupir-eternel.mp3");
+var laLuneRousse = new Audio("music/fakear-la-lune-rousse-feat-deva-premal-official-music-video.mp3")
+var nteriniAColorsShow = new Audio("music/fatoumata-diawara-nterini-a-colors-show.mp3")
+var gunsNRoses = new Audio("music/guns-n-roses-sweet-child-o-mine-official-music-video.mp3")
+var nilsFrahmSays = new Audio("music/nils-frahm-says.mp3")
+var NearLight = new Audio("music/Olafur Arnalds - Near Light (Original Mix) [TraxCrate.com].mp3")
+var petitBiscuitSunset = new Audio("music/petit-biscuit-sunset-lover.mp3")
+var toBuildAHome = new Audio("music/the-cinematic-orchestra-to-build-a-home.mp3")
+var tinariwenIoiSastanaqqam = new Audio("music/tinariwen-ioi-sastanaqqam.mp3")
+var DanceMonkey = new Audio("music/Tones and I - Dance Monkey (Lyrics).mp3")
+var Tadow = new Audio("music/Masego + FKJ - Tadow.mp3")
+var Rockstar = new Audio("music/Post Malone - rockstar ft. 21 Savage.mp3")
+obj["Post Malone - rockstar ft. 21 Savage"]= Rockstar;
+obj["Masego + FKJ - Tadow"]=Tadow;
+obj["Tones and I - Dance Monkey"]=DanceMonkey;
+obj["tinariwen-ioi-sastanaqqam"]=tinariwenIoiSastanaqqam;
+obj["the-cinematic-orchestra-to-build-a-home"]=toBuildAHome;
+obj["petit-biscuit-sunset-lover"]=petitBiscuitSunset;
+obj["Olafur Arnalds - Near Light"]=NearLight;
+obj["nils-frahm-says"]=nilsFrahmSays;
+obj["guns-n-roses-sweet-child-o-mine-official-music-video"]=gunsNRoses;
+obj["fatoumata-diawara-nterini-a-colors-show"]= nteriniAColorsShow;
+obj["fakear-la-lune-rousse-feat-deva-premal-official-music-video"]=laLuneRousse;
+obj["DhaferYoussef-Soupir-Eternel"] = SoupirEternel;
+
+var songskeys = Object.keys(obj)
+var count1=0;
+var count2=0;
+var count3=0;
+var count4=0;
+var count5=0;
+var count6=0;
+var count7=0;
+var count8=0;
+var count9=0;
+var count10=0;
+var count11=0;
+var count12=0;
+
+$("#one").on("click",function(){
 	if(count1===1){
-		obj[songkeys[0]].pause();
+		obj["Olafur Arnalds - Near Light"].pause();
 		count1=0
 		return;
 	}
-	obj[songkeys[0]].play();
+	obj["Olafur Arnalds - Near Light"].play();
 	count1++;
+})
+$("#two").on("click",function(){
+	if(count2===1){
+		obj["the-cinematic-orchestra-to-build-a-home"].pause();
+		count2=0
+		return;
+	}
+	obj["the-cinematic-orchestra-to-build-a-home"].play();
+	count2++;
+})
+
+$("#three").on("click",function(){
+	if(count3===1){
+		obj["nils-frahm-says"].pause();
+		count3=0
+		return;
+	}
+	obj["nils-frahm-says"].play();
+	count3++;
+})
+
+$("#four").on("click",function(){
+	if(count4===1){
+		obj["DhaferYoussef-Soupir-Eternel"].pause();
+		count4=0
+		return;
+	}
+	obj["DhaferYoussef-Soupir-Eternel"].play();
+	count4++;
+})
+$("#five").on("click",function(){
+	if(count5===1){
+		obj["fatoumata-diawara-nterini-a-colors-show"].pause();
+		count5=0
+		return;
+	}
+	obj["fatoumata-diawara-nterini-a-colors-show"].play();
+	count5++;
+})
+$("#six").on("click",function(){
+	if(count6===1){
+		obj["tinariwen-ioi-sastanaqqam"].pause();
+		count6=0
+		return;
+	}
+	obj["tinariwen-ioi-sastanaqqam"].play();
+	count6++;
+})
+
+$("#seven").on("click",function(){
+	if(count7===1){
+		obj["petit-biscuit-sunset-lover"].pause();
+		count7=0
+		return;
+	}
+	obj["petit-biscuit-sunset-lover"].play();
+	count7++;
+})
+$("#eight").on("click",function(){
+	if(count8===1){
+		obj["fakear-la-lune-rousse-feat-deva-premal-official-music-video"].pause();
+		count8=0
+		return;
+	}
+	obj["fakear-la-lune-rousse-feat-deva-premal-official-music-video"].play();
+	count8++;
+})
+
+$("#nine").on("click",function(){
+	if(count9===1){
+		obj["guns-n-roses-sweet-child-o-mine-official-music-video"].pause();
+		count9=0
+		return;
+	}
+	obj["guns-n-roses-sweet-child-o-mine-official-music-video"].play();
+	count9++;
+})
+
+$("#ten").on("click",function(){
+	if(count10===1){
+		obj["Post Malone - rockstar ft. 21 Savage"].pause();
+		count10=0
+		return;
+	}
+	obj["Post Malone - rockstar ft. 21 Savage"].play();
+	count10++;
+})
+
+$("#eleven").on("click",function(){
+	if(count11===1){
+		obj["Masego + FKJ - Tadow"].pause();
+		count11=0
+		return;
+	}
+	obj["Masego + FKJ - Tadow"].play();
+	count11++;
+})
+
+$("#twelve").on("click",function(){
+	if(count12===1){
+		obj["Tones and I - Dance Monkey"].pause();
+		count12=0
+		return;
+	}
+	obj["Tones and I - Dance Monkey"].play();
+	count12++;
 })
 
 
