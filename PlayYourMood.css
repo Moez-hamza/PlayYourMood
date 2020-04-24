@@ -248,10 +248,11 @@
 }
 
 .testImage:hover {
- opacity: 0.5;
- transition: 0.5s;
+ opacity: 0.3;
+ transition: 0.8s;
  cursor:pointer;
 }
+
 #play{
 	font-family: Georgia, serif;
 	font-size: 10px
@@ -267,6 +268,15 @@
   left:100px;
 
 }
+.SongTitle1{
+    font-family: Georgia, serif;
+    color:black;
+    padding-left:155px;
+    padding-top: 255px;
+    font-size: 15px
+
+}
+
 
 #two {
 	  max-width: 200px;
@@ -275,6 +285,14 @@
   margin-left: 50px;
  
   left:400px;
+
+}
+.SongTitle2{
+    text-align: center;
+    font-family: Georgia, serif;
+    color:black;
+    padding-right:320px;
+    font-size: 15px;
 
 }
 #three {
@@ -286,6 +304,14 @@
   	left:700px;
 
 }
+.SongTitle3{
+    text-align: center;
+    font-family: Georgia, serif;
+    color:black;
+    padding-left:280px;
+    font-size: 15px;
+
+}
 #four {
 		max-width: 200px;
   	max-height: 200px;
@@ -294,6 +320,25 @@
 
   	left:1000px;
 }
+.SongTitle4{
+    text-align: right;
+    font-family: Georgia, serif;
+    color:#FAFAD2;
+    margin-right: 220px;
+    margin-top: -80px;
+    font-size: 15px;
+
+}
+#Fakear{
+  color:black;
+  text-align: center;
+  margin-left:1100px;
+}
+#Fatoumata{
+  text-align: center;
+  margin-right: 1070px;
+}
+
 #five{
 	  max-width: 200px;
   max-height: 200px;
